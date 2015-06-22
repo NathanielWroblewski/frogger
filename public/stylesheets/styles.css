@@ -53,25 +53,25 @@ h1 {
 }
 
 .game .frog:after {
-  content: url('/public/images/frog.svg');
+  content: url('/frogger/public/images/frog.svg');
 }
 
 .game .yellow-car:after {
-  content: url('/public/images/yellow_car.svg');
+  content: url('/frogger/public/images/yellow_car.svg');
 }
 
 .game .red-car:after {
-  content: url('/public/images/red_car.svg');
+  content: url('/frogger/public/images/red_car.svg');
 }
 
 .game .turtle {
-  background-image: url('/public/images/turtle.svg');
+  background-image: url('/frogger/public/images/turtle.svg');
 }
 
 .game .log {
-  background-image: url('/public/images/log.svg');
+  background-image: url('/frogger/public/images/log.svg');
 }
 
 .game .lily-pad {
-  background-image: url('/public/images/lily-pad.svg');
+  background-image: url('/frogger/public/images/lily-pad.svg');
 }
