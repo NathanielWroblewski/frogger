@@ -84,10 +84,12 @@
       })
 
   setInterval(function() {
-    if (!board.win) {
+    if (!board.win && !board.over) {
       board.tick(counter)
       game.render()
       counter++
+    } else {
+      document.onkeyup = function() {}
     }
   }, 400)
 

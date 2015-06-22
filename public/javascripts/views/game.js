@@ -18,12 +18,9 @@ Frogger.Views.Game = function(config) {
   }
 
   this.render = function() {
-    if (this.model.over) {
-      location.reload()
-    } else {
-      if (this.model.win) alert('YOU WIN!')
-      this.el.innerHTML = this.template(this.model.toJSON())
-    }
+    if (this.model.over) alert('YOU LOSE!')
+    if (this.model.win) alert('YOU WIN!')
+    this.el.innerHTML = this.template(this.model.toJSON())
   }
 
   this.initialize()
