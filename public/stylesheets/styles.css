@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: #666;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 50px 0;
+}
+
+.container {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.game {
+  padding-top: 10px;
+}
+
+.game div {
+  height: 40px;
+  width:  40px;
+  float: left;
+  cursor: pointer;
+}
+
+.game div:nth-child(9n + 1) {
+  clear: both;
+}
+
+.game .grass {
+  background-color: #36D7B7;
+}
+
+.game .road, .game .yellow-car, .game .red-car {
+  background-color: #666;
+  height: 38px;
+  border-bottom: 4px dashed white;
+}
+
+.game .road:nth-child(n + 100), .game .red-car:nth-child(n + 100) {
+  border-bottom: 2px solid #666;
+}
+
+.game .water, .game .log {
+  background-color: #19B5FE;
+}
+
+.game .frog:after {
+  content: url('/public/images/frog.svg');
+}
+
+.game .yellow-car:after {
+  content: url('/public/images/yellow_car.svg');
+}
+
+.game .red-car:after {
+  content: url('/public/images/red_car.svg');
+}
+
+.game .turtle {
+  background-image: url('/public/images/turtle.svg');
+}
+
+.game .log {
+  background-image: url('/public/images/log.svg');
+}
+
+.game .lily-pad {
+  background-image: url('/public/images/lily-pad.svg');
+}
